@@ -26,6 +26,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+    DBInit.Seed(app); // Seed the database with initial data in development mode
 }
 
 app.UseStaticFiles(); // Enables serving static files like CSS, JS, and images from wwwroot
