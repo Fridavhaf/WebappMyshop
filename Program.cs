@@ -19,6 +19,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
+app.UseStaticFiles(); // Enables serving static files like CSS, JS, and images from wwwroot
+
 // Maps the default controller route using the pattern 
 // "{controller=Home}/{action=Index}/{id?}". 
 // For example, /Item/Table maps to the Table action in ItemController.
