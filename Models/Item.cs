@@ -1,6 +1,4 @@
-using System;
-// Importerer standard .NET-biblioteket "System", 
-// som gir grunnleggende funksjonalitet (f.eks. typer og verktøy).
+using System.ComponentModel.DataAnnotations;
 
 namespace Myshop.Models
 // Definerer et "namespace" (navnerom). Her legger du Item-klassen inn under 
@@ -15,6 +13,8 @@ namespace Myshop.Models
         public string? Description { get; set; }
         // "string?" betyr at den kan være null (valgfri informasjon)
         public string? ImageUrl { get; set; }
+        // navigation property
+        public virtual List<OrderItem>? OrderItems { get; set; }
 
     }
 }
