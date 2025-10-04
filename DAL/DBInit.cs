@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Myshop.Models;
 
-namespace Myshop.Models;
+namespace Myshop.DAL;
 
 public static class DBInit
 {

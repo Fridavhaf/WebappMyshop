@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Myshop.Models;
+using Myshop.DAL;
 
 namespace Myshop.Controllers;
 

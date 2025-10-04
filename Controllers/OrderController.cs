@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Myshop.Models;
 using Myshop.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Threading.Tasks;
+using Myshop.DAL;
+
 
 namespace Myshop.Controllers;
 public class OrderController : Controller
