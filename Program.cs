@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Myshop.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 /*
@@ -8,6 +11,12 @@ Services are components (e.g. database contexts, authentication, logging)
 that provide functionality and can be injected and used across the application.
 */
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ItemDbContext>(options =>
+{
+    options.UseSqlite(
+        builder.Configuration["ConnectionStrings:ItemDbContextConnection"]);
+});
 
 var app = builder.Build();
 
